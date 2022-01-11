@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+image {
+    max-width: 100%;
+}
+h1 {
+    font-size: 48px;
+    line-height: 65px;
+    letter-spacing: 0.005em;
+    color: #385F96;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 34px;
+    line-height: 47px;
+    color: #385F96;
+}
+
+p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.container{
+    max-width: 980px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    
+}
+.flex-basis {
+    flex-basis: 50%;
+}
+/* --------------button-------- */
+
+.btn {
+    text-decoration: none;
+    background-color: #385F96;
+    color: white;
+    padding: 15px 30px;
+    border-radius:30px ;
+    font-size: 16px;
+}
+
+
+/* ----hero-section--------- */
+
+.hero_content {
+    position: relative;
+}
+
+.bubble {
+    position: absolute;
+    top: -50px;
+    left: -90px;
+    z-index: -1;
+}
+
+.hero_image {
+    text-align: center;
+}
+
+/* -------about-section------- */
+.about_content {
+    position: relative;
+}
+.about_content h2::before {
+    content: "";
+    width: 80px;
+    height: 5px;
+    background: #44D1D9;
+    position: absolute;
+    top: 12px;
+}
+/* ------------project-section--------- */
+
+.project_content {
+    position: relative;
+}
+.bottom-bubble {
+    position: absolute;
+    top: -60px;
+    left: -50px;
+    z-index: -1;
+}
+
+/* ---------footer-------- */
+
+.footer {
+    background-color:#385F96 ;
+    text-align: center;
+    padding: 10px 0;
+    margin: 20px 0 0 0;
+}
+.footer-text {
+    color: white;
+}
+.footer-text span {
+    color: red;
+    padding: 0 2px;
+}
+
+@media (max-width:740px) {
+    .container {
+        flex-direction: column;
+    }
+    .about_content {
+        order: 1;
+    }
+    .about_image {
+        order: 2;
+    }
+    .flex-basis {
+        padding: 2rem;
+    }
+
+    .bubble {
+        position: absolute;
+        top: -20px;
+        left: -35px;
+        z-index: -1;
+    }
+    .bottom-bubble {
+        position: absolute;
+        top: -20px;
+        left: -40px;
+        z-index: -1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
